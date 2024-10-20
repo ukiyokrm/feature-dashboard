@@ -1,0 +1,135 @@
+/* Combined CSS for Dashboard, Login, and Sidebar */
+
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif; /* Set a more modern font */
+  }
+  
+  /* Login Container */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #9face6); /* Gradient background */
+  }
+  
+  /* Login Form */
+  .login-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    padding: 775px; /* Increased padding for spaciousness */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+    width: 350px; /* Slightly narrower for a modern look */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 25px; /* Space below the heading */
+    font-size: 2.2em; /* Larger font size */
+    color: #333; /* Darker color for better contrast */
+    letter-spacing: 1px; /* Slight spacing for a modern feel */
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0; /* Space above and below the input */
+    border: 1px solid #ddd; /* Lighter border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+  }
+  
+  .login-form input:focus {
+    border-color: #646cff; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(100, 108, 255, 0.5); /* Subtle glow effect */
+    outline: none; /* Remove default outline */
+  }
+  
+  .login-button {
+    background-color: #28a745; /* Change to a green background */
+    color: white; /* White text for contrast */
+    padding: 12px 20px; /* Added horizontal padding for a wider button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1em; /* Match font size */
+    font-weight: bold; /* Bold text for emphasis */
+    text-transform: uppercase; /* Uppercase text for a more impactful look */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Added box-shadow transition */
+  }
+  
+  .login-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .login-button:active {
+    transform: translateY(0); /* Reset lift effect when active */
+    box-shadow: none; /* Remove shadow on active press */
+  }
+  
+  .register-button {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: #151516; /* Link color */
+    cursor: pointer; /* Pointer cursor */
+    text-decoration: underline; /* Underline for link effect */
+    font-size: 0.9em; /* Smaller font size */
+  }
+  
+  .register-button:hover {
+    color: #646cff; /* Change color on hover */
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+      width: 250px; /* Fixed width for the sidebar */
+      height: 100vh;
+      background-color: #ffffff; /* White background for a clean look */
+      padding: 30px; /* Increased padding for spacious layout */
+      box-shadow: -4px 0 15px rgb(226, 9, 9); /* Shadow on the left for depth */
+      position: fixed; /* Fix sidebar in place */
+      top: 0;
+      right: 0; /* Position on the right side */
+      transition: width 0.3s; /* Smooth transition for width */
+  }
+  
+  .sidebar-title {
+      margin: 0;
+      font-size: 2em; /* Larger title for prominence */
+      color: #f30000; /* Dark blue color for title */
+      text-align: center;
+  }
+  
+  .sidebar-menu {
+      list-style: none; /* Remove default list styles */
+      padding: 0;
+      margin-top: 40px; /* Increased space above the menu */
+  }
+  
+  .sidebar-menu li {
+      margin: 20px 0; /* Space between menu items */
+  }
+  
+  .sidebar-link {
+      text-decoration: none; /* Remove underline */
+      color: #fa1100; /* Dark blue color for links */
+      padding: 15px; /* Adjust padding for comfort */
+      display: block; /* Make link occupy full width */
+      border-radius: 10px; /* Smooth, rounded corners */
+      transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  .sidebar-link:hover {
+      background-color: #ff0000; /* Light gray on hover */
+      color: #f73c03; /* Darker blue for text on hover */
+  }
+  
